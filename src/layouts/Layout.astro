@@ -26,7 +26,15 @@ const { title = "DACA | Alternative Music Artist" } = Astro.props;
     <slot />
 
     <footer>
-      <p>© 2026 DACA. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Instagram">📷</a>
+     <a href="#" aria-label="TikTok">🎬</a>
+      <a href="#" aria-label="Spotify">🎵</a>
+      <a href="#" aria-label="YouTube">▶️</a>
+      <a href="#" aria-label="Bandcamp">🎧</a>
+    </div>
+
+      <p>© 2026 DACA</p>
     </footer>
   </body>
 
@@ -129,5 +137,23 @@ const { title = "DACA | Alternative Music Artist" } = Astro.props;
         font-size: 15px;
       }
     }
+
+    .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  font-size: 28px;
+  text-decoration: none;
+  color: #f5f1ea;
+  transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
   </style>
 </html>
