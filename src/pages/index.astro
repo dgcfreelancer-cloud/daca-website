@@ -1,0 +1,207 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="DACA | Alternative Music Artist">
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="artist-type">Alternative Music Artist</p>
+
+        <h1>DACA</h1>
+
+        <p class="hero-text">
+          Exploring the space between nature, memory, voice, and electronic sound.
+        </p>
+
+        <p class="sound-tags">
+          Indie · Experimental · Nature Inspired · Electronic
+        </p>
+
+        <a class="button" href="/music">Enter the sound</a>
+      </div>
+    </section>
+
+    <section class="split-section">
+      <div>
+        <p class="section-label">Nature as sound</p>
+        <h2>Music shaped by landscapes.</h2>
+      </div>
+
+      <p>
+        DACA is a musical world inspired by forests, rivers, mountains, memory,
+        and the quiet mystery of the natural world.
+      </p>
+    </section>
+
+    <section class="image-grid">
+      <img src="/mushroom.jpg" alt="Red mushroom on forest floor" />
+      <img src="/mountain-valley.jpg" alt="Mountain valley landscape" />
+      <img src="/river-canoe.jpg" alt="Canoe on river surrounded by trees" />
+    </section>
+
+    <section class="feature-section">
+      <img src="/sunset-river.jpg" alt="Sunset over river" />
+
+      <div>
+        <p class="section-label">Coming soon</p>
+        <h2>First releases are in progress.</h2>
+
+        <p>
+          Soon, this space will connect listeners to official music, videos,
+          and the first sonic pieces of DACA.
+        </p>
+
+        <a class="text-link" href="/music">Visit Music</a>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .hero {
+      min-height: 100vh;
+      background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.35),
+          rgba(0, 0, 0, 0.72)
+        ),
+        url('/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 0 48px;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      margin-left: 6vw;
+    }
+
+    .artist-type,
+    .section-label {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 120px;
+      letter-spacing: 8px;
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-size: 48px;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    .hero-text {
+      max-width: 650px;
+      font-size: 24px;
+      line-height: 1.6;
+    }
+
+    .sound-tags {
+      font-size: 22px;
+      color: #d8b98a;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      color: #f4efe7;
+      border: 1px solid #f4efe7;
+      padding: 14px 22px;
+      text-decoration: none;
+    }
+
+    .split-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 120px 24px;
+      align-items: center;
+    }
+
+    .split-section p {
+      font-size: 22px;
+      line-height: 1.7;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding: 0 24px 120px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+    }
+
+    .feature-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 120px;
+      align-items: center;
+    }
+
+    .feature-section img {
+      width: 100%;
+      height: 620px;
+      object-fit: cover;
+    }
+
+    .feature-section p {
+      font-size: 22px;
+      line-height: 1.7;
+    }
+
+    .text-link {
+      color: #d8b98a;
+      font-size: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        padding: 0 24px;
+      }
+
+      .hero-content {
+        margin-left: 0;
+      }
+
+      h1 {
+        font-size: 72px;
+      }
+
+      h2 {
+        font-size: 36px;
+      }
+
+      .split-section,
+      .feature-section {
+        grid-template-columns: 1fr;
+        padding: 80px 24px;
+      }
+
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .image-grid img,
+      .feature-section img {
+        height: 420px;
+      }
+    }
+  </style>
+</Layout>

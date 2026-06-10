@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Gallery | DACA">
+  <main>
+    <section class="gallery-hero">
+      <p class="section-label">Visual world</p>
+      <h1>Gallery</h1>
+
+      <p>
+      The places that shape the music. Mountains, rivers, forests, silence,
+      strange encounters, and the landscapes that continue to teach me how to listen.
+      </p>
+    </section>
+
+    <section class="gallery-grid">
+      <img src="/hero.jpg" alt="Wildflower field and mountains" />
+      <img src="/mushroom.jpg" alt="Red mushroom on forest floor" />
+      <img src="/mountain-valley.jpg" alt="Mountain valley under clouds" />
+      <img src="/forest-dog.jpg" alt="Black dog on a mountain path" />
+      <img src="/mountain-path.jpg" alt="Person standing in mountain landscape" />
+      <img src="/river-canoe.jpg" alt="Wooden canoe on a quiet river" />
+      <img src="/sunset-river.jpg" alt="Sunset over a river" />
+      <img src="/sacred-rocks.jpg" alt="Sacred rocks and jungle landscape" />
+    </section>
+  </main>
+
+  <style>
+    .gallery-hero {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 150px 24px 80px;
+    }
+
+    .section-label {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #d8b98a;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin: 10px 0 24px;
+    }
+
+    .gallery-hero p {
+      font-size: 24px;
+      line-height: 1.6;
+      max-width: 750px;
+    }
+
+    .gallery-grid {
+      columns: 3;
+      column-gap: 18px;
+      padding: 0 24px 120px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      margin-bottom: 18px;
+      break-inside: avoid;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .gallery-grid {
+        columns: 2;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery-grid {
+        columns: 1;
+      }
+
+      .gallery-hero {
+        padding-top: 130px;
+      }
+    }
+  </style>
+</Layout>

@@ -1,0 +1,115 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About | DACA">
+  <main>
+    <section class="about-intro">
+      <p class="section-label">About the artist</p>
+
+      <h1>About DACA</h1>
+
+      <p class="intro">
+        DACA is the artistic project of a Colombian singer, composer,
+        instrumentalist, and alternative music artist.
+      </p>
+    </section>
+
+    <section class="about-image">
+      <img src="/river-canoe.jpg" alt="River and canoe surrounded by trees" />
+    </section>
+
+    <section class="about-story">
+      <p>
+        After many years living in the city, DACA fell deeply in love with the
+        Colombian jungle and the living landscapes of her country.
+      </p>
+
+      <p>
+        Her music explores the meeting point between voice, organic textures,
+        electronic sound, memory, and emotion.
+      </p>
+
+      <p>
+        Through indie, experimental, and nature-inspired influences, DACA seeks
+        to transmit feelings that words cannot fully hold.
+      </p>
+    </section>
+  </main>
+
+  <style>
+    .about-intro {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 160px 24px 80px;
+    }
+
+    .section-label {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #d8b98a;
+    }
+
+    h1 {
+      font-size: 96px;
+      line-height: 0.95;
+      margin: 18px 0 32px;
+    }
+
+    .intro {
+      font-size: 32px;
+      line-height: 1.45;
+      max-width: 850px;
+      margin: 0;
+    }
+
+    .about-image {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 90px;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 680px;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .about-story {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 0 24px 130px;
+    }
+
+    .about-story p {
+      font-size: 26px;
+      line-height: 1.65;
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: 800px) {
+      .about-intro {
+        padding-top: 140px;
+      }
+
+      h1 {
+        font-size: 62px;
+      }
+
+      .intro {
+        font-size: 24px;
+      }
+
+      .about-image img {
+        height: 460px;
+      }
+
+      .about-story p {
+        font-size: 22px;
+      }
+    }
+  </style>
+</Layout>

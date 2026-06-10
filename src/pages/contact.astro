@@ -1,0 +1,134 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contact | DACA">
+  <main>
+    <section class="contact-page">
+      <div>
+        <p class="section-label">Contact</p>
+        <h1>Connect with DACA</h1>
+
+        <p>
+          For collaborations, performances, creative inquiries, or future booking requests,
+          you can send a message here.
+        </p>
+
+        <p class="note">
+          This form is visually ready. We will connect it to daquidaca@gmail.com when the site
+          is published.
+        </p>
+      </div>
+
+      <form>
+        <label>
+          Name
+          <input type="text" name="name" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message"></textarea>
+        </label>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <style>
+    .contact-page {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 150px 24px 120px;
+      align-items: start;
+    }
+
+    .section-label {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: #d8b98a;
+    }
+
+    h1 {
+      font-size: 72px;
+      line-height: 1;
+      margin: 10px 0 24px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 1.7;
+    }
+
+    .note {
+      color: #b8ada0;
+      font-size: 18px;
+    }
+
+    form {
+      display: grid;
+      gap: 22px;
+      padding: 32px;
+      border: 1px solid rgba(244, 239, 231, 0.25);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    label {
+      display: grid;
+      gap: 8px;
+      font-size: 18px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 14px;
+      border: 1px solid rgba(244, 239, 231, 0.35);
+      background: transparent;
+      color: #f4efe7;
+      font-family: Georgia, serif;
+      font-size: 18px;
+    }
+
+    textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 14px 22px;
+      border: 1px solid #f4efe7;
+      background: transparent;
+      color: #f4efe7;
+      font-family: Georgia, serif;
+      font-size: 18px;
+    }
+
+    button:hover {
+      background: #f4efe7;
+      color: #0f120f;
+    }
+
+    @media (max-width: 800px) {
+      .contact-page {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 56px;
+      }
+    }
+  </style>
+</Layout>

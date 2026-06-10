@@ -1,0 +1,69 @@
+---
+const { title = "DACA | Alternative Music Artist" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <title>{title}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/">DACA</a>
+        <a href="/about">About</a>
+        <a href="/music">Music</a>
+        <a href="/videos">Videos</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <slot />
+
+    <footer>
+      <p>© 2026 DACA. All rights reserved.</p>
+    </footer>
+  </body>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #0f120f;
+      color: #f4efe7;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+
+      display: flex;
+      gap: 24px;
+      padding: 24px 48px;
+
+      background: rgba(5, 8, 7, 0.45);
+      backdrop-filter: blur(8px);
+    }
+
+    nav a {
+      color: #f4efe7;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    footer {
+      padding: 40px 48px;
+      color: #b8ada0;
+    }
+
+    a {
+      color: #d8b98a;
+    }
+  </style>
+</html>

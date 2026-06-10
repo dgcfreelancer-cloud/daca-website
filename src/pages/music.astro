@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Music | DACA">
+  <main class="music-page">
+    <p class="section-label">Music</p>
+
+    <h1>Coming Soon</h1>
+
+    <p class="intro">
+      The first recordings are currently in development.
+    </p>
+
+    <div class="card">
+      <h2>Future Releases</h2>
+
+      <p>
+        Experimental compositions inspired by rivers, forests, dreams,
+        memory, electronic textures, and the Colombian landscape.
+      </p>
+
+      <p>
+        Spotify, YouTube, Bandcamp, and additional platforms will be added
+        here when the first works are released.
+      </p>
+    </div>
+  </main>
+
+  <style>
+    .music-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 160px 24px;
+    }
+
+    .section-label {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #d8b98a;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 90px;
+      margin: 20px 0;
+    }
+
+    .intro {
+      font-size: 28px;
+      margin-bottom: 60px;
+    }
+
+    .card {
+      border: 1px solid rgba(255,255,255,.15);
+      padding: 40px;
+    }
+
+    .card p {
+      font-size: 22px;
+      line-height: 1.7;
+    }
+  </style>
+</Layout>
